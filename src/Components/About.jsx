@@ -1,7 +1,12 @@
 const About = () => {
-    return ( 
-        <h2>About Component</h2>
-     );
-}
+    return (
+        <article id="about-section">
+            <h2>About</h2>
+            <p id="about-para">
+            I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.
+            </p>
+        </article>
+     )
+};
  
 export default About;
