@@ -20,6 +20,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -44,6 +45,12 @@ body {
   background: #23252C;
 }
 
+#container-2 {
+  width: 300px;
+  background: #1A1B21;
+  border-radius: 0.5rem;
+}
+
 /* info page */
 
 header {
@@ -52,13 +59,14 @@ header {
   justify-content: center;
   align-items: center;
   width: 300px;
-  background: #1A1B21;
+
 }
 
 header img {
   width: 200px;
   height: 300px;
   rotate: -90deg;
+  margin-top: -3.05rem;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
@@ -84,7 +92,9 @@ a {
   transition: all 0.35s linear;
 }
 
-header a#email-button:link, header a#email-button:visited, header a#email-button:active {
+header a#email-button:link,
+header a#email-button:visited,
+header a#email-button:active {
   color: #374151;
   background: #fff;
 }
@@ -95,7 +105,9 @@ header a#email-button:hover {
   border: 1px solid #fff;
 }
 
-header a#linkedIn-button:link, header a#linkedIn-button:visited, header a#linkedIn-button:active {
+header a#linkedIn-button:link,
+header a#linkedIn-button:visited,
+header a#linkedIn-button:active {
   padding: 0.4rem 1.6rem;
   color: #fff;
   background: #5093E2;
@@ -108,21 +120,43 @@ header a#linkedIn-button:hover {
 }
 
 /* about area */
+/* interest area */
 
-#about-section, #interest-section{
-  width: 300px;
+#about-section,
+#interest-section {
+  width: 100%;
   padding: 1rem;
-  background: #1A1B21;
 }
 
-#about-section h2, #interest-section h2 {
-  font:bold 1.5rem/1.5 'Inter', Avenir, Helvetica, Arial, sans-serif;
+#about-section h2,
+#interest-section h2 {
+  font: bold 1.5rem/1.5 'Inter', Avenir, Helvetica, Arial, sans-serif;
 }
 
-#about-section p, #interest-section p {
+#about-section p,
+#interest-section p {
   font: 500 0.84rem/1.5 'Inter', Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* interest area */
-
 /* Footer area */
+
+footer {
+  height: 50px;
+  width: 100%;
+  background: #161619;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+footer span {
+  width: 25px;
+  height: 25px;
+  background: #7c7c7c;
+  color: #1A1B21;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
